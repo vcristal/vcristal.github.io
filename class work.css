@@ -1,0 +1,20 @@
+/*This is how you add notes in CSS*/
+body {
+  background-color:lightgreen
+}
+  .order1 {
+    border:2px solid blue;
+    width:30%;
+    height:180px
+  }
+
+  figure {
+    border:2px dotted red;
+    width:30%;
+    height:180px
+  }
+
+  div.order2 {
+    border:2px solid red;
+    width:30%;
+    height:180px
