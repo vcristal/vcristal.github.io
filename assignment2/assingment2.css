@@ -11,10 +11,13 @@ line-height: normal;
   }
 
 .arial {
-    font-family: arial;}
+    font-family: arial;
+  color:hotpink;}
 
 .courier {
-      font-family: courier;}
+      font-family: courier;
+      color:pink;}
 
 .corsiva {
-            font-family: corsiva;}
+            font-family: corsiva;
+          color:lightpink;}
