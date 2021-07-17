@@ -1,0 +1,28 @@
+/*You don't have to use class=, you can just change
+the format of p from here without having to add class after <p in the html file*/
+
+
+.box2{
+  margin-bottom:80%;
+  height:400px;
+  width: 1500px;
+  border:2px solid red;
+  background-color: rgba(82,163,154,.3);
+  box-shadow: 12px 13px 12px pink;
+}
+
+/*I got better results using pixels than %*/
+  .box2 > div {
+    width:400px;
+    height:300px;
+    border:2px solid blue;
+    float:left;
+    margin-left:4.7%;
+    margin-top:3.1%;
+
+  }
+
+.box2 > div >img {
+width:100%;
+height:100%;
+}
