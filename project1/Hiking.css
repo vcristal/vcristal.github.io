@@ -1,0 +1,5 @@
+/*You don't have to use class=, you can just change
+the format of p from here without having to add class after <p in the html file*/
+.center {
+text-align:center;
+}
