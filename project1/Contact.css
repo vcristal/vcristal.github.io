@@ -1,0 +1,34 @@
+.center {
+text-align:center;
+}
+
+.box2{
+  margin-bottom:5%;
+  height:300px;
+  /*The following allows the width to automatically change when the width of the browser windows changes*/
+  width:auto;
+}
+
+
+  .box2 > div {
+    width:46%;
+    height:94%;
+    float:left;
+    margin-left:3%;
+    margin-top:1%;
+    border:2px solid
+
+  }
+
+  .box2 > div> div {
+    width:100%;
+    height:100%;
+    float:left;
+
+  }
+
+  .box2 > div> div>p {
+  margin-left:50px;;
+  line-height: 2;
+
+  }
