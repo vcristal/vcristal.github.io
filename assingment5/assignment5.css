@@ -1,0 +1,206 @@
+/* Comments */
+.purple2{
+  background-color: purple;
+  text-decoration: none;
+  padding: 5px;
+  color: lightblue;
+  text-shadow: blue;
+}
+
+.modalheading2title{
+  border: 1px solid blue;
+  width:80%;
+  height: 100%;
+}
+
+.modalheading2_link{
+    border: 1px solid red;
+    width:10%;
+    height: 100%;
+    float:right;
+
+}
+
+.modalheading2_link>a{
+  display: block;
+  text-align: center;
+
+}
+
+
+.modalheading2{
+  width: auto;
+  background-color: green;
+  color: white;
+  margin-bottom: 6%;
+
+}
+
+
+.purple{
+  background-color: purple;
+  text-decoration: none;
+  padding: 10px;
+  color: lightblue;
+  text-shadow: blue;
+}
+
+.modalbottomclick{
+width: 20%;
+height: 100%;
+float:right;
+display: flex;
+align-items: center;
+}
+
+.modalbottomclick>a{
+  display: block;
+  text-align: center;
+
+}
+
+
+.modalbottomimage{
+  margin-left: 10%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.modalbottomimage>img{
+  width: 100%;
+  height: 100%;
+}
+
+.modalbottom{
+width:auto;
+height:52%;
+
+}
+
+
+.modalparagraph{
+  background-color: lightpink;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7%;
+
+}
+
+.modalparagraph>p{
+margin: 4%;
+}
+
+.modalheading{
+  background-color: lightpink;
+  color: white;
+  margin-bottom: 6%;
+}
+
+
+
+
+
+.modalwindow{
+  position: fixed;
+  width: auto;
+top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left:0%;
+  background-color:rgba(52,198,235,0.4);
+    /* Without the following you can not click on anything*/
+  pointer-events: none;
+    /* While fixing this window make opacity 1, when you are done
+    make it 0*/
+  opacity:1;
+}
+
+/* This will make the portion of the page show up when You
+click on click me*/
+.modalwindow:target{
+  opacity: 1;
+  /* This will allow the close button to work*/
+  pointer-events: all;
+}
+
+.msgblock{
+  width:60%;
+  height:60%;
+  background-color:#80527f;
+  margin: auto;
+  margin-top: 20%;
+  position: relative;
+}
+
+
+.msgblock>img{
+height: 70%;
+width:100%;
+}
+
+.msgblock2{
+  width:60%;
+  height:60%;
+  background-color: #b9b4ed;
+  margin: auto;
+  margin-top: 20%;
+  position: relative;
+}
+
+
+.msgblock2>img{
+height: 70%;
+width:100%;
+}
+
+
+
+
+.orange{
+  background-color: orange;
+  text-decoration: none;
+  padding: 10px;
+  text-shadow: 2px 2px 3px purple;
+  color: white;
+}
+
+.box1{
+  margin-top: 2%;
+  	margin-bottom:5%;
+    height:470px;
+  	/*The following allows the width to automatically change when the width of the browser windows changes*/
+  width:auto;
+  /*This allows for the box to be centered horizontally and vertically */
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1>div{
+  width: 90%;
+  height:90%;
+}
+
+.box1>div>div{
+  border: 3px solid #80527f;
+  width: 45%;
+  height: 93%;
+  float: left;
+  margin-left:3%;
+    margin-top:2.4%;
+      text-align: center;
+}
+
+.box1>div>div>img{
+/*Making the image into a block element to center it */
+  display: block;
+  /*Allows space at the top */
+width:55%;
+	height:50%;
+  margin-top: 10%;
+margin-left: auto;
+margin-right: auto;
+
+}
