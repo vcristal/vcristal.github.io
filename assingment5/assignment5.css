@@ -30,7 +30,7 @@
 
 .modalheading2{
   width: auto;
-  background-color: green;
+  background-color: lightpink;
   color: white;
   margin-bottom: 6%;
 
@@ -114,7 +114,7 @@ top: 0%;
   pointer-events: none;
     /* While fixing this window make opacity 1, when you are done
     make it 0*/
-  opacity:1;
+  opacity:0;
 }
 
 /* This will make the portion of the page show up when You
