@@ -1,0 +1,27 @@
+/**/
+body {background-color: #82def5;}
+
+.clock{
+  background-image: url("images/clockimage.png");
+  background-size: contain;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  height: 500px;
+  background-position: center;
+}
+
+.clock>img{
+  display: block;
+  width: 25%;
+  margin:auto;
+}
+
+.hourhand{
+
+
+}
+
+.minutehand{
+
+}
