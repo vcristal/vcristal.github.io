@@ -39,7 +39,7 @@ animation: hourhandmove 10s forwards;
   top: 43.5%;
   left:49.6%;
   position: absolute;
-  width: 40%;
+  width: 35%;
   animation: minutehandmove 10s forwards;
 }
 
