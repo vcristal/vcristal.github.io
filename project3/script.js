@@ -9,14 +9,14 @@ document.querySelector('.Check').addEventListener('click',function(){
    }//This will give a message if the user did not submit a value
    let guess =1;
    if (randomnumber==inputUser){
-       console.log('You got the right answer');
+      document.querySelector('.msg').textContent='You got the right answer!!';
    }
    else if (randomnumber>inputUser){
-       console.log ('Try a greater number');
+     document.querySelector('.msg').textContent='↟Try a greater number!!';
        guess++;
    }
    else {
-       console.log ('Try a smaller number')
+     document.querySelector('.msg').textContent='↡Try a smaller number!!';
    }
 })// You are listening to user input. You can define the function right away of outside
 
