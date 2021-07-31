@@ -5,6 +5,10 @@ body {
 .checkbutton{
   text-align: center;
 }
+.checkbutton>input{
+  width:15%;
+  height:100%;
+}
 .desc {
     color:white;
     font-size:20px;
