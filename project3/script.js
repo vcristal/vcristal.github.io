@@ -13,10 +13,15 @@ document.querySelector('.Check').addEventListener('click',function(){
       document.querySelector('.msg').textContent='You got the right answer!!';
    }
    else if (randomnumber !== inputUser && (score >=1)){
-     if (randomnumber>inputUser) {
+     score=score-1
+     document.querySelector('.score').textContent=`💰Score:${score}`
+     if (score===0) {
+       document.querySelector('.msg').textContent='Game Over!!';
+     }
+     else if (randomnumber>inputUser) {
        document.querySelector('.msg').textContent='↟Try a greater number!!';
      }
-     if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓ Try a smaller number!!'
+     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓ Try a smaller number!!'
 
      }
    }
