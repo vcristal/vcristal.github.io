@@ -11,29 +11,30 @@ document.querySelector('.Check').addEventListener('click',function(){
    }//This will give a message if the user did not submit a value
    if (randomnumber==inputUser){
       document.querySelector('.msg').textContent='You got the right answer!!';
+      document.querySelector('.guessnum').textContent=`${randomnumber}`
+      document.querySelector('.highscore').textContent=`🥇Highscore:${score}`
    }
-   else if (randomnumber !== inputUser && (score>=1)){
+   else if (randomnumber !== inputUser && (score >=1)){
      score=score-1
-     if(score==0){
+     document.querySelector('.score').textContent=`💰Score:${score}`
+     if (score===0) {
        document.querySelector('.msg').textContent='Game Over!!';
-
      }
      else if (randomnumber>inputUser) {
        document.querySelector('.msg').textContent='↟Try a greater number!!';
      }
-       else if (randomnumber<inputUser) {
-         document.querySelector('.msg').textContent='↡Try a smaller number!!';
-}
+     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓Try a smaller number!!'
+
+     }
    }
+
 })
-function resetGame() {
-  randomnumber = Math.trunc(Math.random()*100)+1
-  score = 10;
-  
-}
-document.getElementById("resetbtn").addEventListener("click", function() {
-  document.getElementById("demo").innerHTML = "Hello World";
-});
+document.querySelector('.resetbtn').addEventListener('click',function(){
+   randomnumber = Math.trunc(Math.random()*100)+1
+   score = 10;
+   document.querySelector('.score').textContent=`💰Score:${score}`
+   console.log(randomnumber)
+})
 // You are listening to user input. You can define the function right away of outside
 
 /*to change background color
