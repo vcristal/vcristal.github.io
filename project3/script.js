@@ -12,11 +12,11 @@ document.querySelector('.Check').addEventListener('click',function(){
       document.querySelector('.msg').textContent='You got the right answer!!';
    }
    else if (randomnumber>inputUser){
-     document.querySelector('.msg').textContent='Try a greater number!!';
+     document.querySelector('.msg').textContent='↟Try a greater number!!';
        guess++;
    }
    else {
-     document.querySelector('.msg').textContent='Try a smaller number!!';
+     document.querySelector('.msg').textContent='↡Try a smaller number!!';
    }
 })// You are listening to user input. You can define the function right away of outside
 
