@@ -13,4 +13,11 @@ body {
     z-index: 100;
     top:3%;
     right:10%;
+    padding:10px 20px;
+    background:purple;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:5px;
 }
