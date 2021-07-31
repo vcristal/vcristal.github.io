@@ -2,6 +2,9 @@ body {
     background:linear-gradient(90deg, rgba(29,0,36,1) 0%, rgba(104,14,145,1) 12%, rgba(0,212,255,1) 100%);
 }
 
+.msg{
+text-align: center;  
+}
 .checkbutton{
   text-align: center;
 }
