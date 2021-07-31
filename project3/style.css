@@ -1,9 +1,15 @@
 body {
     background:linear-gradient(90deg, rgba(29,0,36,1) 0%, rgba(104,14,145,1) 12%, rgba(0,212,255,1) 100%);
 }
+.score{
+  text-align: center;
+}
+.highscore{
+  text-align: center;
+}
 
 .msg{
-text-align: center;  
+text-align: center;
 }
 .checkbutton{
   text-align: center;

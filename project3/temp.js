@@ -12,15 +12,18 @@ document.querySelector('.Check').addEventListener('click',function(){
    if (randomnumber==inputUser){
       document.querySelector('.msg').textContent='You got the right answer!!';
    }
-   else if (randomnumber !== inputUser && (score >=1)){
-     if (randomnumber>inputUser) {
+   else if (randomnumber !== inputUser && (score>=1)){
+     score=score-1
+     if(score==0){
+       document.querySelector('.msg').textContent='Game Over!!';
+     }
+     else if (randomnumber>inputUser) {
        document.querySelector('.msg').textContent='↟Try a greater number!!';
      }
-     if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓ Try a smaller number!!'
-
-     }
+       else if (randomnumber<inputUser) {
+         document.querySelector('.msg').textContent='↡Try a smaller number!!';
+}
    }
-
 })// You are listening to user input. You can define the function right away of outside
 
 /*to change background color
