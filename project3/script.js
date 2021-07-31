@@ -11,6 +11,7 @@ document.querySelector('.Check').addEventListener('click',function(){
    }//This will give a message if the user did not submit a value
    if (randomnumber==inputUser){
       document.querySelector('.msg').textContent='You got the right answer!!';
+      document.querySelector('.highscore').textContent=`🥇Highscore:${score}`
    }
    else if (randomnumber !== inputUser && (score >=1)){
      score=score-1
