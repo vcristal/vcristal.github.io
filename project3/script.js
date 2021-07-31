@@ -1,4 +1,6 @@
-let randomnumber = Math.trunc(Math.random()*100)+1
+let randomnumber = Math.trunc(Math.random()*100)+1 //You need this to be at the very beginning
+let score=10;//original score
+let highscore=0;//you can update this when you have other highscore
 console.log(randomnumber)
 document.querySelector('.Check').addEventListener('click',function(){
    inputUser=Number(document.querySelector('.userInput').value)
@@ -17,3 +19,7 @@ document.querySelector('.Check').addEventListener('click',function(){
        console.log ('Try a smaller number')
    }
 })// You are listening to user input. You can define the function right away of outside
+
+/*to change background color
+
+document.querySelector('body').style.backgroundColor=''*/
