@@ -9,7 +9,6 @@ let randomnumber = Math.floor(Math.random()*100+1);
 let guess =1;
 document.getElementById,('Check').onclick=function() {
     let answer=document.getElementById('userInput').Value;
-}
 if (randomnumber==answer){
     console.log('You got the right answer');
 }
@@ -20,4 +19,4 @@ else if (randomnumber>answer){
 else {
     console.log ('Try a greater number')
 }
-
+}
