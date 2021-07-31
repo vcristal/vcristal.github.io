@@ -23,7 +23,7 @@ document.querySelector('.Check').addEventListener('click',function(){
      else if (randomnumber>inputUser) {
        document.querySelector('.msg').textContent='↟Try a greater number!!';
      }
-     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓ Try a smaller number!!'
+     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓Try a smaller number!!'
 
      }
    }
