@@ -5,7 +5,7 @@ document.querySelector('.Check').addEventListener('click',function(){
    }//This will give a message if the user did not submit a value
 })// You are listening to user input. You can define the function right away of outside
 
-let randomnumber = math.floor(Math.random()*100+1);
+let randomnumber = Math.floor(Math.random()*100+1);
 let guess =1;
 document.getElementById,('Check').onclick=function() {
     let answer=document.getElementById('userInput').Value;
