@@ -1,5 +1,5 @@
 document.querySelector('.Check').addEventListener('click',function(){
-   const inputUser=Number(document.querySelector('.userInput').value)
+   this.inputUser=Number(document.querySelector('.userInput').value)
    if(!this.inputUser){
     document.querySelector('.msg').textContent='No Input!!'
    }//This will give a message if the user did not submit a value
@@ -8,10 +8,10 @@ document.querySelector('.Check').addEventListener('click',function(){
 let randomnumber = Math.trunc(Math.random()*100)+1;
 console.log(randomnumber)
 let guess =1;
-if (randomnumber==inputUser){
+if (randomnumber==this.inputUser){
     console.log('You got the right answer');
 }
-else if (randomnumber>inputUser){
+else if (randomnumber>this.inputUser){
     console.log ('Try a greater number');
     guess++;
 }
