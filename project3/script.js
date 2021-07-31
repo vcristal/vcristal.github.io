@@ -1,5 +1,5 @@
 document.querySelector('.Check').addEventListener('click',function(){
-   const this.inputUser=Number(document.querySelector('.userInput').value)
+   const inputUser=Number(document.querySelector('.userInput').value)
    if(!this.inputUser){
     document.querySelector('.msg').textContent='No Input!!'
    }//This will give a message if the user did not submit a value
