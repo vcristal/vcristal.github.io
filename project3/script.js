@@ -3,7 +3,6 @@ let score=10;//original score
 let highscore=0;//you can update this when you have other highscore
 document.querySelector('.score').textContent=`💰Score:${score}`
 document.querySelector('.highscore').textContent=`🥇Highscore:${highscore}`
-console.log(randomnumber)
 document.querySelector('.Check').addEventListener('click',function(){
    inputUser=Number(document.querySelector('.userInput').value)
    if(!inputUser){
@@ -33,7 +32,6 @@ document.querySelector('.resetbtn').addEventListener('click',function(){
    randomnumber = Math.trunc(Math.random()*100)+1
    score = 10;
    document.querySelector('.score').textContent=`💰Score:${score}`
-   console.log(randomnumber)
    document.body.className = "default"
    document.querySelector(".think").src="images/thinker.gif";
    document.querySelector('.guessnum').textContent=`?`
