@@ -39,18 +39,22 @@ text-align: center;
 }
 .checkbutton{
   text-align: center;
+  width: 50%;
+  margin: auto;
+  background: wheat;
+  border-radius: 80px;
 }
 .checkbutton>input{
   text-align: center;
-  width:13%;
+  width:20%;
   height: 50px;
   font-size: 50px;
   font-weight: bold;
   color:white;
-  background-color: transparent;
+  background-color:burlywood;;
   border: 2px solid white;
   border-radius: 15px;
-
+  text-shadow: 2px 1px black;
 }
 .desc {
     color:white;
@@ -110,9 +114,9 @@ h1 {
 }
 
 .think{
-  max-width: 100%;
+  max-width: 40%;
   position: absolute;
-  height: 80%;
-  top: -15%;
+  height: 100%;
+  top: 2%;
   right: 17%;
 }
