@@ -24,12 +24,8 @@ document.querySelector('.Check').addEventListener('click',function(){
        document.querySelector('.msg').textContent='Game Over!!';
        document.body.className = "red"
      }
-     else if (randomnumber>inputUser) {
-       document.querySelector('.msg').textContent='↟Try a greater number!!';
-     }
-     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓Try a smaller number!!'
-
-     }
+     else if (randomnumber>inputUser) {document.querySelector('.msg').textContent='↟Try a greater number!!';}
+     else if (randomnumber<inputUser) {document.querySelector('.msg').textContent='⇓Try a smaller number!!'}
    }
 
 })
@@ -40,9 +36,5 @@ document.querySelector('.resetbtn').addEventListener('click',function(){
    console.log(randomnumber)
    document.body.className = "default"
    document.querySelector(".think").src="images/thinker.gif";
+   document.querySelector('.guessnum').textContent=`?`
 })
-// You are listening to user input. You can define the function right away of outside
-
-/*to change background color
-
-document.querySelector('body').style.backgroundColor=''*/
