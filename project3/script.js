@@ -13,12 +13,14 @@ document.querySelector('.Check').addEventListener('click',function(){
       document.querySelector('.msg').textContent='You got the right answer!!';
       document.querySelector('.guessnum').textContent=`${randomnumber}`
       document.querySelector('.highscore').textContent=`🥇Highscore:${score}`
+      document.body.className = "green"
    }
    else if (randomnumber !== inputUser && (score >=1)){
      score=score-1
      document.querySelector('.score').textContent=`💰Score:${score}`
      if (score===0) {
        document.querySelector('.msg').textContent='Game Over!!';
+       document.body.className = "red"
      }
      else if (randomnumber>inputUser) {
        document.querySelector('.msg').textContent='↟Try a greater number!!';
@@ -34,6 +36,7 @@ document.querySelector('.resetbtn').addEventListener('click',function(){
    score = 10;
    document.querySelector('.score').textContent=`💰Score:${score}`
    console.log(randomnumber)
+   document.body.className = "default"
 })
 // You are listening to user input. You can define the function right away of outside
 

@@ -1,6 +1,30 @@
-body {
+.default {
     background:linear-gradient(90deg, rgba(29,0,36,1) 0%, rgba(104,14,145,1) 12%, rgba(0,212,255,1) 100%);
+    animation:gradient 15s ease infinite;
+    background-size: 400% 400%;
 }
+.green {
+    background:linear-gradient(90deg, rgba(29,0,36,1) 0%, rgba(14,145,22,1) 20%, rgba(13,137,46,1) 48%, rgba(0,255,42,1) 89%);
+    animation:gradient 10s linear  infinite;
+    background-size: 400% 400%;
+}
+.red {
+    background: linear-gradient(90deg, rgba(29,0,36,1) 0%, rgba(145,14,14,1) 35%, rgba(137,13,16,1) 48%, rgba(255,0,0,1) 89%);
+    animation:gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 .score{
   text-align: center;
 }
