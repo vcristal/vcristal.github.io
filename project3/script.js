@@ -11,6 +11,7 @@ document.querySelector('.Check').addEventListener('click',function(){
    }//This will give a message if the user did not submit a value
    if (randomnumber==inputUser){
       document.querySelector('.msg').textContent='You got the right answer!!';
+      document.querySelector(".think").src="images/correct.gif";
       document.querySelector('.guessnum').textContent=`${randomnumber}`
       document.querySelector('.highscore').textContent=`🥇Highscore:${score}`
       document.body.className = "green"
@@ -18,6 +19,7 @@ document.querySelector('.Check').addEventListener('click',function(){
    else if (randomnumber !== inputUser && (score >=1)){
      score=score-1
      document.querySelector('.score').textContent=`💰Score:${score}`
+     document.querySelector(".think").src="images/wrong.gif";
      if (score===0) {
        document.querySelector('.msg').textContent='Game Over!!';
        document.body.className = "red"
@@ -37,6 +39,7 @@ document.querySelector('.resetbtn').addEventListener('click',function(){
    document.querySelector('.score').textContent=`💰Score:${score}`
    console.log(randomnumber)
    document.body.className = "default"
+   document.querySelector(".think").src="images/thinker.gif";
 })
 // You are listening to user input. You can define the function right away of outside
 

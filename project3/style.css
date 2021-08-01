@@ -104,7 +104,15 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
+.container{
+  position: relative;
+  height: 100%;
+}
 
 .think{
-  width:15%;
+  max-width: 100%;
+  position: absolute;
+  height: 80%;
+  top: -15%;
+  right: 17%;
 }
