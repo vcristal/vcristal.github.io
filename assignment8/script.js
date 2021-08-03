@@ -16,33 +16,53 @@ const farenheitT=90
 const celciustofarenheit=function(T){
     return (T*9/5)+32
 }
-console.log(celciustofarenheit(30))
+console.log(`${celciusT}°C is ${celciustofarenheit(celciusT)}°F`)
 
-//farenheittocelsius
+const farenheittocelsius=function(T){
+    return (T-32)*5/9  
+}
+console.log(`${farenheitT}°F is ${farenheittocelsius(farenheitT).toFixed(0)}°C`)
 
 /*Baseball teams*/
 console.log("This is the Baseball team exercise")
 
-//Calculate average score of each team using Data 
-netsaver=(97+112+101)/3
-knicksaver=(109+95+106)/3
+//Create an arrow function 'calcAverage' to calculate the average of 3 scores
+netsdata1=[44,23,71]
+knicksdata1=[65,54,49]
+netsdata2=[85,54,41]
+knicksdata2=[23,34,27]
 
-minscore=100
-team1=100
-team2=100
+const calcAverage=(array)=>{
+    let total=0
+for (let i=0;i<array.length;i++){
+    total +=array[i]; 
+}
+return total/array.length
+}
 
-if (netsaver>knicksaver&&netsaver>=minscore){
-    console.log("The Nets win")
+//Use the function to calculate the averages
+let avgNets1=calcAverage(netsdata1)
+let avgNets2=calcAverage(netsdata2)
+let avgKnicks1=calcAverage(knicksdata1)
+let avgKnicks2=calcAverage(knicksdata2)
+
+const checkWinner=(Knicks,Nets)=>{
+if (Knicks>2*Nets){
+    return `the Knicks win (${Knicks} vs ${Nets})`
 }
-else if (knicksaver>netsaver&&knicksaver>=minscore) {
-    console.log("The Knicks win")   
-}
-else if (netsaver=knicksaver&&netsaver>=minscore){
-    console.log("It is a draw")    
+else if (Nets>2*Knicks){
+    return `the Nets win (${Nets} vs ${Knicks} )`
 }
 else{
-    console.log("No team wins")    
+    return `no team wins`
 }
+}
+
+console.log(`For test data 1, ${checkWinner(avgKnicks1,avgNets1)}`)
+
+console.log(`For test data 2, ${checkWinner(avgKnicks2,avgNets2)}`)
+
+
 
 /*Improved tip calculator*/
 console.log("This is the improved tip calculator")
