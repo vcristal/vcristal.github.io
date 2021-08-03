@@ -2,7 +2,7 @@
 console.log("This is the temperature converter")
 
 let celsiusT=30
-let farenheit=((celsiusT*9.5)+32)
+let farenheit=((celsiusT*9/5)+32)
 console.log(`${celsiusT}°C is ${farenheit}°F`)
 
 farenheit=90
@@ -26,13 +26,13 @@ if(lucasbmi>johnbmi){
     console.log(`Lucas' BMI (${lucasbmi.toFixed(1)}) is higher than John's (${johnbmi.toFixed(1)})!`)
 }
 else{
-    console.log(`John's BMI (${johnbmi.toFixed(1)}) is higher than Lucas' (${lucasbmi.toFixed(1)})!`) 
+    console.log(`John's BMI (${johnbmi.toFixed(1)}) is higher than Lucas' (${lucasbmi.toFixed(1)})!`)
 }
 
 /*Baseball teams*/
 console.log("This is the Baseball team exercise using Data Bonus 2")
 
-//Calculate average score of each team using Data 
+//Calculate average score of each team using Data
 netsaver=(97+112+101)/3
 knicksaver=(109+95+106)/3
 
@@ -44,11 +44,11 @@ if (netsaver>knicksaver&&netsaver>=minscore){
     console.log("The Nets win")
 }
 else if (knicksaver>netsaver&&knicksaver>=minscore) {
-    console.log("The Knicks win")   
+    console.log("The Knicks win")
 }
 else if (netsaver=knicksaver&&netsaver>=minscore){
-    console.log("It is a draw")    
+    console.log("It is a draw")
 }
 else{
-    console.log("No team wins")    
+    console.log("No team wins")
 }
