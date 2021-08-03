@@ -46,6 +46,7 @@ let avgNets2=calcAverage(netsdata2)
 let avgKnicks1=calcAverage(knicksdata1)
 let avgKnicks2=calcAverage(knicksdata2)
 
+//Create checkwinner function
 const checkWinner=(Knicks,Nets)=>{
 if (Knicks>2*Nets){
     return `the Knicks win (${Knicks} vs ${Nets})`
