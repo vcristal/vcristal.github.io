@@ -1,0 +1,11 @@
+/* !important allows the settings indicated in the css file to override the settings in bootstrap*/
+.links>ul>li>a{
+  color: #158a96 !important;
+}
+
+/* hover will create a color when we hover over the text on a*/
+.links>ul>li>a:hover{
+  background-color: #158a96;
+  border-radius: 55%;
+  color:white !important
+}
