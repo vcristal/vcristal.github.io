@@ -13,8 +13,8 @@
   <button class="navbar-toggler" data-toggle="collapse" data-target="#links">
 <span class="navbar-toggler-icon"></span>
   </button>
-<!--links-->
-<div class="links navbar-collapse" id="links">
+<!--links. the class name collapse makes the link names dissapear when you decrease the width of the page-->
+<div class="collapse navbar-collapse" id="links">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item">
       <a href="#" class="nav-link px-3">Home</a>
@@ -30,8 +30,67 @@
     </li>
   </ul>
 </div>
-
 </nav>
+
+<!--Big image with description-->
+
+<!--mx determines the x margin-->
+<div class="jumbotron mx-5">
+  <h1>Visit Italy!!</h1>
+  <p>Some description Some description Some description Some description Some description Some description Some descriptionSome descriptionSome description </p>
+<!--Play with settings row-->
+  <div class="row">
+    <!--ml changes the left margin, col-7 changes size-->
+    <div class="col-7 ml-5">
+      <!--Play with settings-->
+      <img class="img-fluid md-img" src="img/1.jpg">
+        </div>
+  </div>
+    <!--Play with settings-->
+    <!--Text right ensures that button is to the right-->
+  <div class="text-right">
+    <!--btn makes the button background bigger and btn-info creates the nice buton background-->
+    <a class="btn btn-info mt-4" href="google.com">Click me!</a>
+
+</div>
+</div>
+<!--The three images in a row-->
+
+<!--Play with settings-->
+<div class="row my-3">
+  <!--Play with settings-->
+  <div class="col col-4">
+    <!--Play with settings-->
+    <img class="img-fluid rounded-pill border border-info" src="img/2.jpg" alt="">
+<div class="text-center">
+  <h4 class="my-3">Awesome views!</h4>
+    <!--Make text smaller-->
+  <p>Text description Text Text Text description Text description Text description</p>
+  <a class="btn btn-info mb-3" href="google.com">Click me!</a>
+</div>
+  </div>
+  <div class="col col-4">
+    <!--Play with settings-->
+    <img class="img-fluid rounded-pill border border-info" src="img/2.jpg" alt="">
+<div class="text-center">
+  <h4 class="my-3">Awesome views!</h4>
+    <!--Make text smaller-->
+  <p>Text description Text Text Text description Text description Text description</p>
+  <a class="btn btn-info mb-3" href="google.com">Click me!</a>
+</div>
+  </div>
+  <div class="col col-4">
+    <!--Play with settings-->
+    <img class="img-fluid rounded-pill border border-info" src="img/2.jpg" alt="">
+<div class="text-center">
+  <h4 class="my-3">Awesome views!</h4>
+    <!--Make text smaller-->
+  <p>Text description Text Text Text description Text description Text description</p>
+  <a class="btn btn-info mb-3" href="google.com">Click me!</a>
+</div>
+  </div>
+</div>
+
 
 
 
@@ -41,14 +100,15 @@
   <!--These settings keep image and gallery aligned-->
   <div class="col col-6">
     <img class="img-fluid" src="img/1.jpg" alt="">
-    <h4>Beautiful shores!</h4>
+    <figcaption class="mt-3"><h4>Beautiful shores!</h4></figcaption>
     <p>With its approximately 4,660 mi of coastline, Italy is the ideal place for sea lovers.
       The wide variety of its beaches makes it perfect for every type of vacationer in search
       of nature, fun, and rest and relaxation. </p>
   </div>
   <!--Gallery-->
   <div class="col col-6 border">
-    <div class="row pb-3">
+    <!--my-3 gives a nice top and bottom padding-->
+    <div class="row my-3">
       <div class="col-4"><img class="img-thumbnail img-fluid" src="img/2.jpg" alt=""></div>
       <div class="col-4"><img class="img-thumbnail img-fluid" src="img/2.jpg" alt=""></div>
         <div class="col-4"><img class="img-thumbnail img-fluid" src="img/2.jpg" alt=""></div>
