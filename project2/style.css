@@ -1,0 +1,44 @@
+body{
+  background-color: lightyellow;
+}
+.topbox {
+display:flex;
+flex-flow: row wrap;
+font-family:cursive; /* tweaked*/
+font-style: italic;
+}
+/*Tweak add shadow*/
+.toplogo {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 10%;
+  height: 10%;
+  border:1px solid #aeb559; /* tweaked*/
+  animation: expand 2s infinite;
+}
+
+.topheader{
+  color:#838750; /* tweaked*/
+  font-size: 40px;
+  margin-left: 100px;
+  position: absolute;
+  animation: updown 5s infinite;
+
+
+}
+
+/*animations*/
+
+/*Tweak*/
+@keyframes expand {
+  0% {transform: scale(1)}
+  20% {transform: scale(1.25)}
+  40% {transform: scale(1)}
+  60% {transform: scale(1.25)}
+  0% {transform: scale(1)}
+
+}
+
+@keyframes updown {
+
+}
