@@ -1,10 +1,55 @@
 body{
   background-color: lightyellow;
+
 }
+/*Tweak Make text bigger*/
+.slideshow{
+  width: 33%;
+  height:300px;
+  float:left;
+  font-size: 20px;
+  text-align: center;
+}
+.slideshow:nth-child(1){
+background: olive;
+}
+.slideshow:nth-child(2){
+background: #c4c414;
+}
+.slideshow:nth-child(3){
+background: #fcafa7;
+}
+
+
+/*Tweak*/
+.slidecontainer{
+height:100%;
+width:400%;
+animation: slideshow 22s infinite;
+}
+
+.topframe{
+overflow: hidden;
+height:50px;
+margin: 0 auto;
+}
+
+.topsubheader{
+margin-top: auto;
+float: left;
+align-content: flex-start;
+top:12%;
+left:18%
+position:absolute;
+animation: updown2 5s infinite;
+}
+
+
+/*twek if you have time*/
 .topbox {
 display:flex;
 flex-flow: row wrap;
-font-family:cursive; /* tweaked*/
+font-family: cursive; /* tweaked*/
 font-style: italic;
 }
 /*Tweak add shadow*/
@@ -17,12 +62,13 @@ font-style: italic;
   animation: expand 2s infinite;
 }
 
+/*twek if you have time*/
 .topheader{
   color:#838750; /* tweaked*/
   font-size: 40px;
   margin-left: 100px;
   position: absolute;
-  animation: updown 5s infinite;
+  animation: updown1 5s infinite;
 
 
 }
@@ -39,6 +85,28 @@ font-style: italic;
 
 }
 
-@keyframes updown {
-
+/*Tweak*/
+@keyframes updown1 {
+  0% {top:0%; transform: scale(1);}
+  20% {top:12%; transform: scale(1.25);}
+  40% {top:0%; transform: scale(1);}
+  60% {top:12%; transform: scale(1.25);}
+  80% {top:0%; transform: scale(1);}
+  60% {top:12%; transform: scale(1.25);}
+}
+/*Tweak*/
+@keyframes updown2 {
+  0% {top:12%; transform: scale(1);}
+  20% {top:5%; transform: scale(1.25);}
+  40% {top:12%; transform: scale(1);}
+  60% {top:5%; transform: scale(1.25);}
+  80% {top:12%; transform: scale(1);}
+  60% {top:5%; transform: scale(1.25);}
+}
+/*Tweak*/
+@-webkit-keyframes slideshow {
+  0% {margin-left:0%;}
+  33% {margin-left:-100%;}
+  66% {margin-left:-200%;}
+  100% {margin-left:-300%;}
 }
