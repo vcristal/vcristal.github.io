@@ -11,7 +11,48 @@ hr{
   width: 95%;
   margin-left: 2.5%;
 }
+.page>div{
+  width: 100%;
+}
 
+/*Sixth block*/
+
+.bottomblock{
+ background-color:#1c1b1a;
+ width: auto;
+height: 25vh;
+position: relative;
+   border: 2px solid red;
+   /*Putting display flex here ruins everythin*/
+
+}
+.bottomblock>div{
+  width: 100%;
+  float: left;
+     border: 2px solid white;
+}
+.bottomblock>div>hr{
+  border: 0.15vh solid white;
+  background-color:#dcdcde;
+  width: 90%
+}
+.tcenter {
+  text-align: center;
+   padding-left:2vh;
+    display: flex;
+}
+
+.tcenter>div{
+  width:25%;
+/*This is neccesary to make them in the same line*/
+  float: left;
+}
+.tcenter>div>a{
+ color:black;
+ color: #dcdcde;
+ text-decoration: none;
+ font-size: 1.5vh
+}
 
 /*Fourth block with the body creams*/
 .fourthboxtitle1{
