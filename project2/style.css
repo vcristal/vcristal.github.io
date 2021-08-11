@@ -14,32 +14,48 @@ hr{
 .page>div{
   width: 100%;
 }
+/*Social media*/
+.socialmedia{
+  text-align: right;
+  padding-right: 3%;
+  width: 96.5%!important;
+  margin-top: 1.5%;
+}
+
+.socialmedia>a>img{
+  width: 2.5%;
+  height: 2.5%;
+  margin-right: 1.5%;
+}
+.socialmedia>H4{
+  font-size: 1.5vh;
+   color: #dcdcde;
+}
 
 /*Sixth block*/
 
 .bottomblock{
  background-color:#1c1b1a;
  width: auto;
-height: 25vh;
+height: 40vh;
 position: relative;
-   border: 2px solid red;
    /*Putting display flex here ruins everythin*/
 
 }
 .bottomblock>div{
   width: 100%;
   float: left;
-     border: 2px solid white;
 }
 .bottomblock>div>hr{
   border: 0.15vh solid white;
   background-color:#dcdcde;
-  width: 90%
+  width: 93%
 }
 .tcenter {
   text-align: center;
    padding-left:2vh;
     display: flex;
+    margin-bottom: 3%;
 }
 
 .tcenter>div{
@@ -48,7 +64,6 @@ position: relative;
   float: left;
 }
 .tcenter>div>a{
- color:black;
  color: #dcdcde;
  text-decoration: none;
  font-size: 1.5vh
