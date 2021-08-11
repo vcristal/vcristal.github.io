@@ -12,6 +12,30 @@ hr{
   margin-left: 2.5%;
 }
 
+/*Bottom block*/
+.bottomblock{
+background-color:black;
+}
+/*Sixth block with the links to other pages*/
+.tcenter {
+  text-align: center;
+   padding-left: 7vh;
+}
+
+.tcenter>div{
+  width:24%;
+/*This is neccesary to make them in the same line*/
+  float: left;
+}
+.tcenter>div>a{
+ color:white;
+ text-decoration: none;
+ font-size: 1.5vh
+}
+/*Seventh block with the links to social media*/
+
+/*Signature and disclaimer*/
+
 
 /*Fourth block with the body creams*/
 .fourthboxtitle1{
