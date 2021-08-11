@@ -14,12 +14,20 @@ hr{
 .page>div{
   width: 100%;
 }
+/*Signature and disclaimer*/
+.signature{
+  text-align: center;
+  color: #dcdcde;
+  font-size: 1.7vh;
+  border: 2px solid red;
+}
 /*Social media*/
 .socialmedia{
   text-align: right;
   padding-right: 3%;
   width: 96.5%!important;
   margin-top: 1.5%;
+  margin-bottom: 6%;
 }
 
 .socialmedia>a>img{
@@ -37,7 +45,7 @@ hr{
 .bottomblock{
  background-color:#1c1b1a;
  width: auto;
-height: 40vh;
+height: 50vh;
 position: relative;
    /*Putting display flex here ruins everythin*/
 
