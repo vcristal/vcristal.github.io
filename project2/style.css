@@ -7,6 +7,11 @@ hr{
   background-color:olive;
 }
 
+.page{
+  width: 95%;
+  margin-left: 2.5%;
+}
+
 
 /*Fourth block with the body creams*/
 .fourthboxtitle1{
@@ -41,7 +46,7 @@ font-size: 2vh !important
   height: 100%;
   float: left;
   text-align: center;
-  overflow: auto;
+  /*overflow: auto;*/I had to remove it to avoid the bar
 }
 .fourthbox>div>img{
   display: block;
@@ -141,9 +146,7 @@ background-size: 100% 100%;
   background-size: 100% 100%;
   position: relative;
 }
-.page{
-  width: 100%;
-}
+
 
 /*Top part with animation*/
 /*Tweak Make text bigger*/
