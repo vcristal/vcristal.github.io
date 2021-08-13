@@ -14,6 +14,123 @@ hr{
 .page>div{
   width: 100%;
 }
+/*Modal windows*/
+.modbutton{
+  background-color: white;
+    text-decoration: none;
+    padding: 0.8vh;
+    color: black;
+    font-size: 1.5vh;
+}
+.modalgray{
+  background-color: lightgray;
+  font-size: 2vh;
+  height: 22%;
+  width: 100%;
+  /*border: 0.05px solid red;*/
+}
+
+.modalgray>div{
+  width: 80%;
+  height: 90%;
+  margin-left: 9%;
+  border: 0.05px solid lightgray
+}
+
+.modalgray>div>hr{
+  border: 0.25vh solid white;
+  margin-bottom: 2.4%;
+  background-color: white;
+  width: 100%;
+
+}
+
+.pbig{
+  font-size: 2.7vh;
+  margin-bottom: 17%;
+}
+.xbutton{
+  width: 100%;
+  height:3vh;
+
+}
+.xbutton>a{
+  float: right;
+  /*Without display block the item goes out of the border of the div.*/
+  display: block;
+  text-align: center;
+  /*I have to specify width since I am making this a block element*/
+  width: 2.5vh;
+  text-decoration: none;
+  background-color: lightgray;
+  padding: 1.2vh;
+  font-size: 2.4vh;
+  color: black;
+
+}
+.modaldescription{
+  margin-top: 2%;
+  width: 80%;
+  font-size: 2vh;
+  margin-left: 9%;
+  height:47%;
+}
+.modaldescription>div{
+width: 48%;
+height: 100%;
+ float: left;
+ text-align: left;
+}
+.modaldescription>div>img{
+  width: 100%;
+  height: 100%;
+}
+.modalheading{
+  width: 80%;
+  font-size: 2.2vh;
+  margin-left: 9%;
+ }
+ .modalheading>hr{
+   border: 0.25vh solid lightgray;
+   background-color: lightgray;
+   width: 100%;
+ }
+
+.modalwindow{
+  /*I tried absolute, static, sticky relative and inherit does not work*/
+  position:fixed;
+  width: auto;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left:0%;
+  background-color:rgba(52,198,235,0.4);
+    /* Without the following you can not click on anything*/
+  pointer-events: none;
+    /* While fixing this window make opacity 1, when you are done make it 0*/
+  opacity:0;}
+/* This will make the portion of the page show up when You click on click me*/
+.modalwindow:target{
+  opacity: 1;
+  /* This will allow the close button to work*/
+  pointer-events: all;}
+
+
+.msgblock{
+  width:85vh;
+  height:70vh;
+  background-color: white;
+  margin: auto;
+  /*This is where you change where the model windows appears*/
+  margin-top: 10%;
+  position: sticky;}
+
+
+.msgblock>img{
+height: 70%;
+width:100%;}
+
+
 /*Signature and disclaimer*/
 .signature{
   text-align: center;
