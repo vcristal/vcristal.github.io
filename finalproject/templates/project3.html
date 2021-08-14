@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='style_game.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="default">
+<div class="desc"><b>Guess the number between 1 and 100</b></div>
+<button class="resetbtn">Reset</button>
+<br>
+<div class="container">
+<h1 class="title"><b>Guess My Number!</b></h1>
+<h1 class="guessnum">?</h1>
+<img src="{{ url_for('static',filename='images/thinker.gif')}}" alt="thinking girl picture" class="think">
+<hr>
+</div>
+<section class="checkbutton">
+    <p class="score"></p>
+    <p class="highscore"></p>
+    <input class='userInput'type="text"> <br>
+    <button class='Check'>Check!</button>
+    <p class="msg">Let's Start Guessing..</p>
+   </section>
+   <div class="previoustitle">
+   <!--I think underlined will be better-->
+   <h7>Previous score:</h7>
+    <table class="tcenter">
+        <td width=25><p class="usernameold"></p></td>
+        <td width=25><p class="scoreold"></p></td>
+      </tr>
+    </table>
+
+     </div>
+
+
+   </div>
+   <!-- JS dependencies -->
+  <!-- Bootstrap 4 dependency -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <!-- bootbox code. http://bootboxjs.com/examples.html#bb-prompt -->
+    <script type=text/javascript src="{{ url_for('static',filename='js/bootbox.min.js')}}"></script>
+    <script type=text/javascript src="{{ url_for('static',filename='js/bootbox.locales.min.js')}}"></script>
+    <script type=text/javascript src="{{ url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
