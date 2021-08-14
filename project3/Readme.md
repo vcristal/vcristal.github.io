@@ -1,1 +1,1 @@
-http://vcristal.github.io/finalproject/project3.html
+http://vcristal.github.io/finalproject/templates/project3.html
